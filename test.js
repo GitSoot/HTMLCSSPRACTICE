@@ -1,0 +1,1 @@
+alert('Are you Ready? Click "Okay" to start your journey in space')

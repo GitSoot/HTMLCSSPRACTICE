@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <title>Space Clock</title>
+        <link rel="stylesheet" href="clock.css">
+    </head>
+    <body class="bground">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+            <h1 id="current-time"></h1>
+            <div class="quotes">
+                <h4>Truth</h4>
+                <h3>Time waits for no man</h3>
+            </div>
+        </div>
+        <script>
+            let time = document.getElementById("current-time");
+            
+            setInterval(() =>{let d = new Date();
+            time.innerHTML = d.toLocaleTimeString()},1000)
+        </script>
+    </body>
+</html>
